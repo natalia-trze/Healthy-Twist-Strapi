@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chef-stories",
+      "handler": "chef-story.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chef-stories/count",
+      "handler": "chef-story.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chef-stories/:id",
+      "handler": "chef-story.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chef-stories",
+      "handler": "chef-story.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chef-stories/:id",
+      "handler": "chef-story.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chef-stories/:id",
+      "handler": "chef-story.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

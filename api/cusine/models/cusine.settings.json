@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cusines",
+  "info": {
+    "name": "Cusine"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "post": {
+      "via": "cusines",
+      "model": "post"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chef_stories",
+  "info": {
+    "name": "chefStory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "story": {
+      "type": "richtext"
+    },
+    "storyImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

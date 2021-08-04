@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "userStory": {
+      "type": "richtext"
+    },
+    "recipe": {
+      "type": "richtext"
+    },
+    "prepTime": {
+      "type": "integer"
+    },
+    "Ingredients": {
+      "type": "enumeration",
+      "enum": [
+        "one"
+      ]
+    },
+    "author": {
+      "model": "author"
+    },
+    "cusines": {
+      "collection": "cusine",
+      "via": "post"
+    }
+  }
+}
