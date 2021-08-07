@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "cusines",
+  "collectionName": "food_types",
   "info": {
-    "name": "Cusine"
+    "name": "FoodType",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,9 @@
     "Name": {
       "type": "string"
     },
-    "post": {
-      "via": "cusines",
-      "model": "post"
+    "posts": {
+      "collection": "post",
+      "via": "food_type"
     }
   }
 }

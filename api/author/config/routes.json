@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/authors/posts/:id",
+      "handler": "author.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/authors",
       "handler": "author.create",

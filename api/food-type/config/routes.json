@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/cusines",
-      "handler": "cusine.find",
+      "path": "/food-types",
+      "handler": "food-type.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cusines/count",
-      "handler": "cusine.count",
+      "path": "/food-types/count",
+      "handler": "food-type.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cusines/:id",
-      "handler": "cusine.findOne",
+      "path": "/food-types/:id",
+      "handler": "food-type.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/cusines",
-      "handler": "cusine.create",
+      "path": "/food-types",
+      "handler": "food-type.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/cusines/:id",
-      "handler": "cusine.update",
+      "path": "/food-types/:id",
+      "handler": "food-type.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/cusines/:id",
-      "handler": "cusine.delete",
+      "path": "/food-types/:id",
+      "handler": "food-type.delete",
       "config": {
         "policies": []
       }

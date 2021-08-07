@@ -39,18 +39,19 @@
     "prepTime": {
       "type": "integer"
     },
-    "Ingredients": {
-      "type": "enumeration",
-      "enum": [
-        "one"
-      ]
-    },
     "author": {
       "model": "author"
     },
-    "cusines": {
-      "collection": "cusine",
-      "via": "post"
+    "ingredients": {
+      "type": "richtext"
+    },
+    "postedBy": {
+      "via": "posts",
+      "model": "author"
+    },
+    "food_type": {
+      "via": "posts",
+      "model": "food-type"
     }
   }
 }

@@ -32,6 +32,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "posts": {
+      "collection": "post",
+      "via": "postedBy"
     }
   }
 }
