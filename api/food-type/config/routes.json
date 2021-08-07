@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/food-types/:id",
-      "handler": "food-type.findOne",
+      "handler": "food-type.find",
       "config": {
         "policies": []
       }
