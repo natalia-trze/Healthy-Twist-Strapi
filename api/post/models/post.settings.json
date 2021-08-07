@@ -49,10 +49,6 @@
       "via": "posts",
       "model": "author"
     },
-    "food_type": {
-      "via": "posts",
-      "model": "food-type"
-    },
     "cuisine": {
       "via": "posts",
       "model": "cuisine"
