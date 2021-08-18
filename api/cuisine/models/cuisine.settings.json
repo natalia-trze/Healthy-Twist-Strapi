@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "cuisines",
   "info": {
-    "name": "Cuisine"
+    "name": "Cuisine",
+    "description": ""
   },
   "options": {
     "increments": true,
